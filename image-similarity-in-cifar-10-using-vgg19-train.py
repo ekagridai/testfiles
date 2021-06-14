@@ -38,7 +38,7 @@ parser.add_argument('-LR', '--LEARNING_RATE', type=float,
                     help='Learning rate.')
 args = parser.parse_args()
 
-if LEARNING_RATE in args:
+if args.LEARNING_RATE is not None:
     LEARNING_RATE = args.LEARNING_RATE
 
 print('INPUT_DIRECTORY_NAME', INPUT_DIRECTORY_NAME)
@@ -51,7 +51,7 @@ print('MOMENTUM', MOMENTUM)
 print('WEIGHT_DECAY', WEIGHT_DECAY)
 print('NUM_EPOCHS', NUM_EPOCHS)
 
-asdfasdfasdfasdf
+asdfasdfasdfasdfif LEARNING_RATE in args:
 
 ### Data Analysis
 for dirname, _, filenames in os.walk(INPUT_DIRECTORY_NAME):
