@@ -50,7 +50,7 @@ for dirname, _, filenames in os.walk(INPUT_DIRECTORY_NAME):
 input_dir_name = INPUT_DIRECTORY_NAME
 
 cifar_10_dir_name = os.path.join(input_dir_name,
-                                 'the-cifar10-dataset/cifar-10-batches-py')
+                                 'the-cifar10-dataset')
 print(cifar_10_dir_name)
 
 train1_full_filename = os.path.join(cifar_10_dir_name, 'data_batch_1')
