@@ -51,8 +51,6 @@ print('MOMENTUM', MOMENTUM)
 print('WEIGHT_DECAY', WEIGHT_DECAY)
 print('NUM_EPOCHS', NUM_EPOCHS)
 
-asdfasdfasdfasdfif LEARNING_RATE in args:
-
 ### Data Analysis
 for dirname, _, filenames in os.walk(INPUT_DIRECTORY_NAME):
     for filename in filenames:
@@ -282,6 +280,7 @@ test_losses = []
 test_accuracies = []
 
 for epoch_i in range(1, NUM_EPOCHS+1):
+    break #bar
     # Train portion
     ###############
     tic = time.time()
