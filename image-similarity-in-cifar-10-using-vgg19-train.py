@@ -280,7 +280,6 @@ test_losses = []
 test_accuracies = []
 
 for epoch_i in range(1, NUM_EPOCHS+1):
-    break #bar
     # Train portion
     ###############
     tic = time.time()
