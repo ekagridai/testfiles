@@ -18,10 +18,6 @@ import torchvision
 print("torchvision %s" % torchvision.__version__)
 from torchvision import datasets, transforms, models
 
-import matplotlib
-print("matplotlib %s" % matplotlib.__version__)
-import matplotlib.pyplot as plt
-
 ### Hyperparameters
 # Data
 INPUT_DIRECTORY_NAME = '/datastores'
