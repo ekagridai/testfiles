@@ -32,6 +32,14 @@ MOMENTUM = 0.9
 WEIGHT_DECAY = 0.0005
 NUM_EPOCHS = 2 #bar 100
 
+parser = argparse.ArgumentParser(description='Image Similarity Training')
+parser.add_argument('-LR', '--LEARNING_RATE', type=float,
+                    help='Learning rate.')
+args = parser.parse_args()
+
+if LEARNING_RATE in args:
+    LEARNING_RATE = args.LEARNING_RATE
+
 print('INPUT_DIRECTORY_NAME', INPUT_DIRECTORY_NAME)
 print('NUM_CLASSES', NUM_CLASSES)
 print('WORKING_DIRECTORY', WORKING_DIRECTORY)
@@ -41,6 +49,8 @@ print('LEARNING_RATE', LEARNING_RATE)
 print('MOMENTUM', MOMENTUM)
 print('WEIGHT_DECAY', WEIGHT_DECAY)
 print('NUM_EPOCHS', NUM_EPOCHS)
+
+asdfasdfasdfasdf
 
 ### Data Analysis
 for dirname, _, filenames in os.walk(INPUT_DIRECTORY_NAME):
